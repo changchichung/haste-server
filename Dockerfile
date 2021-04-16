@@ -16,7 +16,7 @@ RUN npm install && \
     npm install aws-sdk@2.738.0 && \
     npm install rethinkdbdash@2.3.31
 
-ENV STORAGE_TYPE=memcached \
+ENV STORAGE_TYPE=file \
     STORAGE_HOST=127.0.0.1 \
     STORAGE_PORT=11211\
     STORAGE_EXPIRE_SECONDS=2592000\
