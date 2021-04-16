@@ -1,4 +1,4 @@
-version: '3.0'
+version: '2'
 services:
   haste-server:
     build: .
@@ -15,5 +15,9 @@ services:
         #networks:
         #- db-network
     volumes:
-      - /home/chchang/git/haste-server/data:/usr/src/app/data
+      - './data:/usr/src/app/data'
+      #- /home/chchang/git/haste-server/data:/usr/src/app/data
 
+        #volumes:
+        #  data: 
+        #    driver: local
